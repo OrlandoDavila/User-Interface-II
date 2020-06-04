@@ -1,0 +1,47 @@
+html {
+    font-size: 62.5%;
+}
+ 
+* {
+    font-size: 1.6rem;
+}
+#navigation {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 2%;
+    background-color: darkgray;
+}
+
+.imageMain {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    width: 70%;
+    height: 10%;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro a {
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+.thePit {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+
+.contact {
+    color: cornsilk;
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
