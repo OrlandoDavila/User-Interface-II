@@ -5,16 +5,22 @@ html {
 * {
     font-size: 1.6rem;
 }
-#navigation {
-    display: flex;
-    justify-content: flex-end;
+
+header nav {
+    width:100%;
+    background-color:#fde769;
+    display:flex;
+    justify-content:flex-end;
+}
+
+.topnav {
     padding-bottom: 2%;
     background-color: darkgray;
 }
 
 .imageMain {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 50%;
     margin: 0 auto;
     width: 70%;
     height: 10%;
@@ -22,6 +28,8 @@ html {
 
 .intro {
     text-align: center;
+    position: relative;
+    color: white;
 }
 
 .intro a {
@@ -29,19 +37,53 @@ html {
     padding: 0.5rem;
 }
 
-h1 {
-    font-size: 5rem;
+.name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+.name a {
+    background-color: white;
+    position: relative;
+    padding: 15px;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.images {
+display:  flex;
+flex-wrap: wrap;
+}
+
+.pics {
+    flex: 33.33%;
+    padding: 5px;
+  }
 
 .thePit {
     display: flex;
     justify-content: center;
     background-color: blue;
+    padding-top: 5%;
+    width:100%;
+    position: relative;
 }
 
-.contact {
-    color: cornsilk;
-    border: 1px solid black;
-    margin: 0 auto;
+nav .contact {
+    text-align: center;
+    background-color: white;
     padding: 0.5rem;
+    border: 1px solid black;
+    color: rgb(0, 0, 0);
+    position: relative;
+    bottom: 100%;
+    font-size: 2rem;
+    
 }
+
+
+/*Mobile CSS*/
