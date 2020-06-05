@@ -30,6 +30,7 @@ body{
 }
 
 * {
+ 
     font-size: 1.6rem;
 }
 #navigation {
@@ -107,7 +108,7 @@ h1 {
 
 .images div {
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     min-width: 14rem;
     max-width: 40rem;
 }
@@ -119,9 +120,19 @@ h1 {
     width: 100%;
     height: 100%;
     flex-wrap: wrap;
-
-    
   }
+
+
+ .images div.pics {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+}
+.caption {
+    display: block;
+}
+
 
 .thePit {
     display: flex;
