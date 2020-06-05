@@ -1,0 +1,159 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+    font-size: 62.5%;
+}
+ 
+body{
+    background-color:white;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+* {
+ 
+    font-size: 1.6rem;
+}
+#navigation {
+    display:flex;
+    padding-bottom: 2%;
+    width:100%;
+}
+
+
+.mainName {
+    order: 0;
+    font-size: 3rem;
+    color: black;
+    background-color:white
+    font-family: 'Fjalla One', sans-serif;
+    margin: 20px 0 0 150px;
+}
+.navbutton {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+
+.imageMain {
+    max-width: 100%;
+    max-height: 50%;
+    margin: 0 auto;
+    width: 70%;
+    height: 10%;
+}
+
+span {
+    padding-left: 100px;
+    padding-right: 1000px;
+}
+
+.intro {
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.intro a {
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+
+button:hover {
+    color: rgb(45, 20, 136);
+}
+
+.name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.name button {
+    background-color: white;
+    position: relative;
+    padding: 15px;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.images {
+    display:  flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.images div {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    min-width: 14rem;
+    max-width: 40rem;
+}
+
+.pics {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+  }
+
+
+ .images div.pics {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+}
+.caption {
+    display: block;
+}
+
+
+.thePit {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(78, 78, 85);
+    padding-top: 5%;
+    width:100%;
+    position: relative;
+}
+
+nav .contact {
+    text-align: center;
+    background-color: white;
+    padding: 0.5rem;
+    border: 1px solid black;
+    color: rgb(0, 0, 0);
+    position: relative;
+    bottom: 100%;
+    font-size: 2rem;
+    
+}
+
+
+/*Mobile CSS*/
