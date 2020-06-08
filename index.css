@@ -38,24 +38,25 @@ body{
 }
 
 .links {
-    width:60%;
+    width:80%;
     display:flex;
     justify-content:space-evenly;
     align-items:center;
 }
 
 .mainName {
-    order: 0;
-    font-size: 3rem;
+    font-size: 4rem;
     color: black;
-    background-color:white
     font-family: 'Fjalla One', sans-serif;
     margin: 20px 0 0 150px;
+    width: 100%;
 }
 .navbutton {
+    font-size: 1.5rem;
     margin: 20px;
     padding: 20px;
     border: 1px solid black;
+    text-decoration: none;
 }
 
 
@@ -100,7 +101,7 @@ h1 {
 }
 
 .images {
-    display:  flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -134,3 +135,69 @@ nav .contact {
 
 
 /*Mobile CSS*/
+@media (max-width: 800px) {
+    
+    body {
+        background-color: cyan;
+    }
+
+
+    .imageMain {
+        max-width: 100%;
+        max-height: 50%;
+        margin: 0 auto;
+        width: 70%;
+        height: 70%;
+    }
+
+    .intro {
+     font-size: 1rem;
+    }
+
+    .links {
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    
+    .mainName{
+        font-size: 6rem;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        padding-right: 20%;
+    }
+
+    .navbutton {
+        font-size: 2rem;
+        margin: 0;
+        padding: 10px 40px;
+        border: 1px solid black;
+        text-decoration: none;
+    }
+
+    .images {
+        display: flex;
+        flex-flow: column wrap;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .PhotoBox {
+        width:30%;
+        margin:4% 0;
+        text-align:center;
+    }
+
+    .imageMain {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        background-color: red;
+    }
+}
