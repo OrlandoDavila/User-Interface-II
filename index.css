@@ -36,6 +36,10 @@ body{
     max-width:100%;
     border:1px solid grey;
 }
+header nav{
+    display: flex;
+    width: 100%;
+}
 
 .links {
     width:80%;
@@ -44,7 +48,7 @@ body{
     align-items:center;
 }
 
-.mainName {
+.logo {
     font-size: 4rem;
     color: black;
     font-family: 'Fjalla One', sans-serif;
@@ -55,7 +59,6 @@ body{
     font-size: 1.5rem;
     margin: 20px;
     padding: 20px;
-    border: 1px solid black;
     text-decoration: none;
 }
 
@@ -121,7 +124,7 @@ h1 {
     position: relative;
 }
 
-nav .contact {
+.contact {
     text-align: center;
     background-color: white;
     padding: 0.5rem;
@@ -129,19 +132,13 @@ nav .contact {
     color: rgb(0, 0, 0);
     position: relative;
     bottom: 100%;
-    font-size: 2rem;
-    
+    font-size: 2rem;  
 }
 
 
 /*Mobile CSS*/
 @media (max-width: 800px) {
     
-    body {
-        background-color: cyan;
-    }
-
-
     .imageMain {
         max-width: 100%;
         max-height: 50%;
@@ -154,16 +151,20 @@ nav .contact {
      font-size: 1rem;
     }
 
-    .links {
-        width:100%;
+    header nav{
         display:flex;
-        flex-direction: column;
-        align-items:center;
-    }
+        flex-wrap:wrap;
+        justify-content:center;
+        width: 100%;
+      }
+
+      .links {
+          width: 100%;
+      }
 
     
-    .mainName{
-        font-size: 6rem;
+    .logo{
+        font-size: 4rem;
         width: 100%;
         text-align: center;
         justify-content: center;
@@ -174,25 +175,29 @@ nav .contact {
         font-size: 2rem;
         margin: 0;
         padding: 10px 40px;
-        border: 1px solid black;
         text-decoration: none;
     }
 
     .images {
-        display: flex;
-        flex-flow: column wrap;
-        flex-direction: column;
         justify-content: space-around;
     }
 
+    .images .PhotoBox {
+        width: 50%;
+    }
+
     .PhotoBox {
-        width:30%;
-        margin:4% 0;
-        text-align:center;
+       
+        margin:4% 12%;
+     
     }
 
     .imageMain {
         margin-top: 10px;
+    }
+
+    .thePit {
+        width: 100%;
     }
 }
 
@@ -200,4 +205,29 @@ nav .contact {
     body {
         background-color: red;
     }
+    .logo{
+        font-size: 4rem;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .links {
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+   .PhotoBox {
+        width: 60%;
+    }
+
+
 }
